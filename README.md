@@ -22,9 +22,11 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 - [x] Made the Clear button to reset the bill amount
 - [x] layout Constraints
+
 ## Video Walkthrough 
 
-Here's a walkthrough of implemented user stories:</b>
+Here's a walkthrough of implemented user stories:
+
 <img src='http://i.imgur.com/FKFU8vI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).

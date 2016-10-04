@@ -22,6 +22,9 @@ class ViewController: UIViewController, UITextFieldDelegate {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
         self.billControl.tintColor = UIColor(red: 60.0/255.0, green: 125.0/255.0, blue: 208.0/255.0, alpha: 1.0)
+        self.billField.clearButtonMode = UITextFieldViewMode.whileEditing
+        self.billField.delegate = self
+        
         let defaultsPercentage = UserDefaults.standard
         billControl.selectedSegmentIndex = defaultsPercentage.integer(forKey: "tipDefault")
         let defaultsBillField = UserDefaults.standard
@@ -45,6 +48,8 @@ class ViewController: UIViewController, UITextFieldDelegate {
         }
 
     }
+    
+    
     
     override func viewWillAppear(_ animated: Bool) {
         self.billField.borderStyle = UITextBorderStyle.none
@@ -109,11 +114,6 @@ class ViewController: UIViewController, UITextFieldDelegate {
         self.totalLabel.text = formatter.string(from: 0 as NSNumber)
         saveBill()
     }
-
-    @IBAction func onClear(_ sender: AnyObject) {
-        updateTip()
-    }
-
     
     @IBAction func onEditingChanged(_ sender: AnyObject) {
 
@@ -124,7 +124,10 @@ class ViewController: UIViewController, UITextFieldDelegate {
             self.tipLabel.alpha = 1
             self.totalLabel.alpha = 1
         })
-        
+        let length = billField.text?.characters.count
+        if length == 1 && billField.text == "0" {
+            billField.text = ""
+        }
         let segmentIndex = billControl.selectedSegmentIndex
         let billAmount = billField.text
         tipTotalMoney(bill: billAmount!,segmentIndex: segmentIndex)

@@ -24,14 +24,8 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4o-HM-MfG">
-                                <frame key="frameInset" minX="16" minY="233" width="95" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Total" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J4o-HM-MfG">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwP-Tm-SXp">
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -53,20 +47,11 @@
                                     <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="editingChanged" id="xl9-n4-1kx"/>
                                 </connections>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LY-Wo-Ts5">
-                                <frame key="frameInset" minX="93" minY="233" width="211" height="29"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3LY-Wo-Ts5">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="25"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Thm-Uf-jsy">
-                                <state key="normal" title="Clear">
-                                    <color key="titleColor" red="0.18726940853247842" green="0.38610767648729316" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                </state>
-                                <connections>
-                                    <action selector="onClear:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2jg-tT-Hqt"/>
-                                </connections>
-                            </button>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="fHU-2v-rUm">
                                 <segments>
                                     <segment title="10%"/>
@@ -77,6 +62,11 @@
                                     <action selector="onEditingChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="7cb-ey-5Cd"/>
                                 </connections>
                             </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NwP-Tm-SXp">
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <gestureRecognizers/>
@@ -85,23 +75,21 @@
                             <constraint firstAttribute="leadingMargin" secondItem="NwP-Tm-SXp" secondAttribute="leading" id="55n-cH-b3x"/>
                             <constraint firstAttribute="leadingMargin" secondItem="fHU-2v-rUm" secondAttribute="leading" id="7ae-0j-c4a"/>
                             <constraint firstAttribute="leadingMargin" secondItem="lsC-YE-A7Q" secondAttribute="leading" id="9Ib-Dg-AYM"/>
-                            <constraint firstItem="NwP-Tm-SXp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="101" id="9ZX-HF-MsB"/>
+                            <constraint firstItem="NwP-Tm-SXp" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="9ZX-HF-MsB"/>
                             <constraint firstAttribute="trailingMargin" secondItem="uQP-wB-Df3" secondAttribute="trailing" id="9qv-lJ-owH"/>
                             <constraint firstItem="o23-C4-bwx" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="25" id="DYJ-Px-7bS"/>
                             <constraint firstAttribute="trailingMargin" secondItem="fHU-2v-rUm" secondAttribute="trailing" id="Rqk-ld-Ioc"/>
-                            <constraint firstItem="Thm-Uf-jsy" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="63" id="SG0-Ok-C7B"/>
-                            <constraint firstItem="3LY-Wo-Ts5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="169" id="THJ-Xd-Teg"/>
-                            <constraint firstItem="lsC-YE-A7Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="TQ3-OE-AOI"/>
+                            <constraint firstItem="3LY-Wo-Ts5" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="155" id="THJ-Xd-Teg"/>
+                            <constraint firstItem="lsC-YE-A7Q" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="124" id="TQ3-OE-AOI"/>
                             <constraint firstItem="3LY-Wo-Ts5" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="77" id="WL5-tA-kYz"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="Thm-Uf-jsy" secondAttribute="trailing" id="WYF-bV-Dq3"/>
                             <constraint firstAttribute="leadingMargin" secondItem="J4o-HM-MfG" secondAttribute="leading" id="aj9-H3-aGu"/>
                             <constraint firstAttribute="trailingMargin" secondItem="o23-C4-bwx" secondAttribute="trailing" id="d3r-Ut-sfM"/>
-                            <constraint firstItem="uQP-wB-Df3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="101" id="ek5-Eh-pJS"/>
+                            <constraint firstItem="uQP-wB-Df3" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="80" id="ek5-Eh-pJS"/>
                             <constraint firstItem="uQP-wB-Df3" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="112" id="lhB-3w-Z5W"/>
-                            <constraint firstItem="J4o-HM-MfG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="169" id="m0y-vt-Lt7"/>
+                            <constraint firstItem="J4o-HM-MfG" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="155" id="m0y-vt-Lt7"/>
                             <constraint firstAttribute="trailingMargin" secondItem="3LY-Wo-Ts5" secondAttribute="trailing" id="nWB-OV-oS5"/>
                             <constraint firstAttribute="leadingMargin" secondItem="Dvf-Ha-27R" secondAttribute="leading" id="nqE-vE-AIE"/>
-                            <constraint firstItem="fHU-2v-rUm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="218" id="p70-r8-Omp"/>
+                            <constraint firstItem="fHU-2v-rUm" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="206" id="p70-r8-Omp"/>
                             <constraint firstItem="Dvf-Ha-27R" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="30" id="p8Y-Ko-Ua5"/>
                             <constraint firstAttribute="trailingMargin" secondItem="lsC-YE-A7Q" secondAttribute="trailing" id="y5T-nf-YSB"/>
                         </constraints>

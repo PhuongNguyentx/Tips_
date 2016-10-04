@@ -4,7 +4,7 @@ Tips is a tip calculator application for iOS.
 
 Submitted by: Nguyen Thi Xuan Phuong
 
-Time spent: 32 hours spent in total
+Time spent: 32 hours 45 mins spent in total
 
 ## User Stories
 
@@ -27,7 +27,7 @@ The following **additional** features are implemented:
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/FKFU8vI.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/F4HZrtz.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
